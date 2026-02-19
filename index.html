@@ -1,22 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Urdu Bazaar Online</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <h2>Urdu Bazaar</h2>
-        <a href="book-details.html">Read a Book</a>
-    </nav>
+<meta charset="UTF-8">
+<title>Urdu Bazaar Online</title>
 
-    <main class="book-container">
-        <h1 class="fancy-heading">The History of Lahore</h1>
-        
-        <div class="long-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. (Imagine this is 500 words long).
-        </div>
-    </main>
+<!-- Google Font for classic book heading -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ✅ TASK 1 — GLOBAL RESET + BORDER-BOX FIX */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: sans-serif;
+    background-color: #f4f1ea;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+/* ✅ TASK 2 — BEAUTIFUL SERIF BOOK HEADING */
+.fancy-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #8e44ad;
+    margin-bottom: 20px;
+}
+
+/* Container — now no overflow because of border-box */
+.book-container {
+    width: 100vw;
+    padding: 50px;
+    background: white;
+}
+
+/* ✅ TASK 3 — NEWSPAPER COLUMN LAYOUT */
+.long-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 1px solid #ddd;
+    text-align: justify;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2>Urdu Bazaar</h2>
+    <a href="#">Read a Book</a>
+</nav>
+
+<main class="book-container">
+    <h1 class="fancy-heading">The History of Lahore</h1>
+
+    <div class="long-text">
+        Lahore is one of the oldest and most culturally rich cities in South Asia. It has been the heart of multiple empires including the Mughal Empire, where magnificent structures like the Badshahi Mosque and Lahore Fort were built. The city later became a major center during the Sikh Empire under Maharaja Ranjit Singh and then flourished under British colonial rule. Today, Lahore is known for its vibrant food streets, historic gardens, educational institutions, and artistic heritage. Walking through the Walled City feels like stepping into a living museum where every street tells a story of centuries past. The blend of old architecture and modern life makes Lahore a truly unique place that represents the soul of Pakistan.
+    </div>
+</main>
+
 </body>
 </html>
